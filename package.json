@@ -1,0 +1,16 @@
+{
+  "name": "add_fis",
+  "version": "1.0.11",
+  "description": "create package.json and install fis locally to old project for tieba caused by ci migration",
+  "bin": "./bin/add_fis.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ci_migrate",
+    "fis"
+  ],
+  "author": "paul_wing",
+  "license": "ISC"
+}

@@ -1,0 +1,10 @@
+{
+    "name": "add_fis",
+    "version": "0.0.0",
+    "main": "fis-conf.js",
+    "directories": {},
+    "devDependencies": {},
+    "author": "",
+    "license": "ISC",
+    "dependencies": {}
+}
