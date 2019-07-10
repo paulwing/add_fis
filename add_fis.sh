@@ -34,6 +34,7 @@ else
         "fis-optimizer-php-template-compress": "0.0.5"
     }
 }' > package.json
+    fi
 
     if [ ! -f "ci.yml" ];then
     echo  'Global:
@@ -54,5 +55,9 @@ Profiles:
     env: cmc_standard
     command: export PATH=\$NODEJS_BIN_V6:\$PATH && npm install fis-optimizer-php-template-compress fis && sh build.sh
     release: True' > ci.yml
+    fi
+
+    if [ -f "BCLOUD" ];then
+        rm -rf BCLOUD
     fi
 fi
