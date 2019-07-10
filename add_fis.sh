@@ -34,5 +34,25 @@ else
         "fis-optimizer-php-template-compress": "0.0.5"
     }
 }' > package.json
+
+    if [ ! -f "ci.yml" ];then
+    echo  'Global:
+  tool: build_submitter
+
+Default:
+  profile: [opPROD]
+
+Profiles:
+  - profile:
+    name: opDEV
+    env: cmc_standard
+    command: echo 'opDEV can construct another pipe line'
+    release: True
+
+  - profile:
+    name: opPROD
+    env: cmc_standard
+    command: export PATH=\$NODEJS_BIN_V6:\$PATH && npm install fis-optimizer-php-template-compress fis && sh build.sh
+    release: True' > ci.yml
     fi
 fi
