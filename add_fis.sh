@@ -11,7 +11,7 @@ else
     if cat .gitignore | grep "node_modules/" > /dev/null; then
         echo ".gitignore is checked to be right"
     else
-        echo "\nnode_modules/" >> .gitignore
+        echo -e "\nnode_modules/" >> .gitignore
     fi
 
     echo "This utility will walk you through creating a package.json file."
