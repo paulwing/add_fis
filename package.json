@@ -1,6 +1,6 @@
 {
   "name": "add_fis",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "create package.json and install fis locally to old project for tieba caused by ci migration",
   "bin": "./bin/add_fis.js",
   "main": "index.js",
