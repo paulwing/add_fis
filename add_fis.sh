@@ -47,7 +47,7 @@ Profiles:
   - profile:
     name: opDEV
     env: cmc_standard
-    command: echo 'opDEV can construct another pipe line'
+    command: echo "opDEV can construct another pipe line"
     release: True
 
   - profile:
