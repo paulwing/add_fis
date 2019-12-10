@@ -53,7 +53,7 @@ Profiles:
   - profile:
     name: opPROD
     env: cmc_standard
-    command: export PATH=\$NODEJS_BIN_V6:\$PATH && npm install fis-optimizer-php-template-compress fis && sh build.sh
+    command: export PATH=\$NODEJS_BIN_V10:\$PATH && npm install fis-optimizer-php-template-compress fis && sh build.sh
     release: True' > ci.yml
     fi
 
